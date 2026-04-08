@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fengqiao Night Mooring | Team & Personas</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #0a0a0a, #111);
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: radial-gradient(circle at top, rgba(232,212,180,0.15), transparent 70%);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin: 0;
+      color: #e8d4b4;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #ccc;
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #e8d4b4;
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #bbb;
+      margin-bottom: 40px;
+    }
+
+    /* Team Section */
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .member-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(232, 212, 180, 0.3);
+      border-radius: 16px;
+      padding: 25px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .member-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(232, 212, 180, 0.2);
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      background: linear-gradient(135deg, #e8d4b4, #bfa77a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #111;
+      font-size: 1.2rem;
+    }
+
+    .member-card h3 {
+      margin: 10px 0 5px;
+      color: #fff;
+    }
+
+    .member-card .id {
+      font-size: 0.9rem;
+      color: #d4b888;
+      margin-bottom: 10px;
+    }
+
+    .member-card p {
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+
+    /* Persona Section */
+    .persona-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .persona-card {
+      background: linear-gradient(180deg, rgba(232,212,180,0.08), rgba(255,255,255,0.02));
+      border: 1px solid rgba(232, 212, 180, 0.4);
+      border-radius: 16px;
+      padding: 25px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .persona-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(232, 212, 180, 0.2);
+    }
+
+    .persona-card h3 {
+      color: #e8d4b4;
+      margin-top: 0;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(232, 212, 180, 0.15);
+      color: #e8d4b4;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin: 4px 6px 4px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid rgba(232, 212, 180, 0.2);
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Fengqiao Night Mooring</h1>
+  <p>Human-Centric Computing Project · Team & Personas</p>
+</header>
+
+<!-- Team Section -->
+<section>
+  <h2 class="section-title">Our Team</h2>
+  <p class="section-subtitle">A multidisciplinary team exploring human-centered design through the cultural lens of Fengqiao.</p>
+
+  <div class="team-container">
+    <div class="member-card">
+      <div class="avatar">JQ</div>
+      <h3>Jiahao Qi</h3>
+      <div class="id">Student ID: 2362068</div>
+      <p>Grade 3 student in Information and Computing Science. Proficient in Python, Java, C++, Machine Learning, and Networking. Passionate about AI algorithms, especially in Domain Adaptation.</p>
+    </div>
+
+    <div class="member-card">
+      <div class="avatar">SC</div>
+      <h3>Shuobai Chen</h3>
+      <div class="id">Student ID: 2362870</div>
+      <p>Grade 3 student majoring in Information and Computing Science. Skilled in vibe coding and storytelling, contributing creativity and narrative design to enhance user engagement.</p>
+    </div>
+
+    <div class="member-card">
+      <div class="avatar">ZC</div>
+      <h3>Zhenxi Chen</h3>
+      <div class="id">Student ID: 2363276</div>
+      <p>Information and Computing Science student focused on using data and code to shape digital landscapes. Dedicated to building a web experience that captures the beauty of Maple Bridge in Suzhou.</p>
+    </div>
+
+    <div class="member-card">
+      <div class="avatar">AS</div>
+      <h3>Antian Sun</h3>
+      <div class="id">Student ID: 2362202</div>
+      <p>Student majoring in Information and Computing Science, specializing in web development and human-centered design. Passionate about creating practical and user-friendly digital experiences.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Personas Section -->
+<section>
+  <h2 class="section-title">User Personas</h2>
+  <p class="section-subtitle">Designed based on the 10-80-10 rule to support diverse user needs.</p>
+
+  <div class="persona-container">
+    <div class="persona-card">
+      <h3>Li Wen · Cultural Explorer</h3>
+      <p><strong>Age:</strong> 28 &nbsp;|&nbsp; <strong>Occupation:</strong> Cultural Researcher</p>
+      <p><strong>Background:</strong> Passionate about Chinese history and literature, especially classical poetry like "Mooring by Maple Bridge at Night."</p>
+      <p><strong>Goals:</strong></p>
+      <span class="tag">Deep cultural understanding</span>
+      <span class="tag">Historical storytelling</span>
+      <span class="tag">Smart travel planning</span>
+      <p><strong>Pain Points:</strong> Fragmented information and lack of immersive cultural context.</p>
+      <p><strong>Needs:</strong> Rich cultural content, intelligent route planning, and interactive storytelling.</p>
+    </div>
+
+    <div class="persona-card">
+      <h3>Wang Meiling · Senior Leisure Traveler</h3>
+      <p><strong>Age:</strong> 65 &nbsp;|&nbsp; <strong>Occupation:</strong> Retired Teacher</p>
+      <p><strong>Background:</strong> Enjoys relaxed cultural tourism and values clarity, accessibility, and comfort in digital tools.</p>
+      <p><strong>Goals:</strong></p>
+      <span class="tag">Easy navigation</span>
+      <span class="tag">Readable content</span>
+      <span class="tag">Comfortable travel experience</span>
+      <p><strong>Pain Points:</strong> Small text, complex interfaces, and confusing navigation.</p>
+      <p><strong>Needs:</strong> Elder-friendly mode, large fonts, simple navigation, and optional audio guidance.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Fengqiao Night Mooring Project · Human-Centric Computing
+</footer>
+
+</body>
+</html>
