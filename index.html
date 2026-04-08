@@ -5,47 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fengqiao Night Mooring | Team & Personas</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(180deg, #0a0a0a, #111);
       color: #f5f5f5;
-      line-height: 1.6;
+      background: #0a0a0a;
     }
 
-    header {
+    /* Hero Background */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 80px 20px 40px;
-      background: radial-gradient(circle at top, rgba(232,212,180,0.15), transparent 70%);
+      background:
+        linear-gradient(rgba(10,10,10,0.7), rgba(10,10,10,0.95)),
+        url('https://images.unsplash.com/photo-1549893075-7c1f2d7fdd4b?q=80&w=1920&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      padding: 40px 20px;
     }
 
-    header h1 {
+    .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin: 0;
+      font-size: 3.5rem;
       color: #e8d4b4;
+      margin-bottom: 10px;
       letter-spacing: 2px;
     }
 
-    header p {
-      color: #ccc;
-      margin-top: 10px;
-      font-size: 1.1rem;
+    .hero p {
+      font-size: 1.2rem;
+      color: #ddd;
+      max-width: 700px;
     }
 
     section {
-      padding: 60px 20px;
+      padding: 70px 20px;
       max-width: 1200px;
       margin: auto;
     }
 
     .section-title {
       text-align: center;
-      font-size: 2.2rem;
+      font-size: 2.3rem;
       color: #e8d4b4;
       margin-bottom: 10px;
       font-family: 'Playfair Display', serif;
@@ -57,7 +65,7 @@
       margin-bottom: 40px;
     }
 
-    /* Team Section */
+    /* Team Cards */
     .team-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -79,23 +87,17 @@
       box-shadow: 0 12px 30px rgba(232, 212, 180, 0.2);
     }
 
-    .avatar {
-      width: 90px;
-      height: 90px;
+    .member-card img {
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      margin: 0 auto 15px;
-      background: linear-gradient(135deg, #e8d4b4, #bfa77a);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      color: #111;
-      font-size: 1.2rem;
+      object-fit: cover;
+      border: 3px solid #e8d4b4;
+      margin-bottom: 15px;
     }
 
     .member-card h3 {
       margin: 10px 0 5px;
-      color: #fff;
     }
 
     .member-card .id {
@@ -109,7 +111,7 @@
       color: #ddd;
     }
 
-    /* Persona Section */
+    /* Persona Cards */
     .persona-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -156,43 +158,44 @@
 </head>
 <body>
 
-<header>
+<!-- Hero Section -->
+<div class="hero">
   <h1>Fengqiao Night Mooring</h1>
-  <p>Human-Centric Computing Project · Team & Personas</p>
-</header>
+  <p>A human-centered digital experience inspired by the poetic beauty of Maple Bridge in Suzhou.</p>
+</div>
 
 <!-- Team Section -->
 <section>
   <h2 class="section-title">Our Team</h2>
-  <p class="section-subtitle">A multidisciplinary team exploring human-centered design through the cultural lens of Fengqiao.</p>
+  <p class="section-subtitle">Blending technology, creativity, and human-centered design.</p>
 
   <div class="team-container">
     <div class="member-card">
-      <div class="avatar">JQ</div>
-      <h3>Jiahao Qi</h3>
-      <div class="id">Student ID: 2362068</div>
-      <p>Grade 3 student in Information and Computing Science. Proficient in Python, Java, C++, Machine Learning, and Networking. Passionate about AI algorithms, especially in Domain Adaptation.</p>
-    </div>
-
-    <div class="member-card">
-      <div class="avatar">SC</div>
+      <img src="images/shuobai.jpg" alt="Shuobai Chen">
       <h3>Shuobai Chen</h3>
       <div class="id">Student ID: 2362870</div>
-      <p>Grade 3 student majoring in Information and Computing Science. Skilled in vibe coding and storytelling, contributing creativity and narrative design to enhance user engagement.</p>
+      <p>Skilled in vibe coding and storytelling, bringing creativity and emotional engagement into the project.</p>
     </div>
 
     <div class="member-card">
-      <div class="avatar">ZC</div>
-      <h3>Zhenxi Chen</h3>
-      <div class="id">Student ID: 2363276</div>
-      <p>Information and Computing Science student focused on using data and code to shape digital landscapes. Dedicated to building a web experience that captures the beauty of Maple Bridge in Suzhou.</p>
-    </div>
-
-    <div class="member-card">
-      <div class="avatar">AS</div>
+      <img src="images/antian.jpg" alt="Antian Sun">
       <h3>Antian Sun</h3>
       <div class="id">Student ID: 2362202</div>
-      <p>Student majoring in Information and Computing Science, specializing in web development and human-centered design. Passionate about creating practical and user-friendly digital experiences.</p>
+      <p>Focused on web development and human-centered design, creating intuitive and user-friendly experiences.</p>
+    </div>
+
+    <div class="member-card">
+      <img src="images/zhenxi.jpg" alt="Zhenxi Chen">
+      <h3>Zhenxi Chen</h3>
+      <div class="id">Student ID: 2363276</div>
+      <p>Passionate about shaping digital landscapes with data and code, capturing the beauty of Maple Bridge.</p>
+    </div>
+
+    <div class="member-card">
+      <img src="images/jiahao.jpg" alt="Jiahao Qi">
+      <h3>Jiahao Qi</h3>
+      <div class="id">Student ID: 2362068</div>
+      <p>Proficient in Python, Java, C++, and Machine Learning, with strong interest in AI and Domain Adaptation.</p>
     </div>
   </div>
 </section>
@@ -200,31 +203,29 @@
 <!-- Personas Section -->
 <section>
   <h2 class="section-title">User Personas</h2>
-  <p class="section-subtitle">Designed based on the 10-80-10 rule to support diverse user needs.</p>
+  <p class="section-subtitle">Designed following the 10-80-10 rule for inclusive user experience.</p>
 
   <div class="persona-container">
     <div class="persona-card">
       <h3>Li Wen · Cultural Explorer</h3>
-      <p><strong>Age:</strong> 28 &nbsp;|&nbsp; <strong>Occupation:</strong> Cultural Researcher</p>
-      <p><strong>Background:</strong> Passionate about Chinese history and literature, especially classical poetry like "Mooring by Maple Bridge at Night."</p>
+      <p><strong>Age:</strong> 28 | <strong>Occupation:</strong> Cultural Researcher</p>
       <p><strong>Goals:</strong></p>
-      <span class="tag">Deep cultural understanding</span>
+      <span class="tag">Cultural depth</span>
       <span class="tag">Historical storytelling</span>
-      <span class="tag">Smart travel planning</span>
-      <p><strong>Pain Points:</strong> Fragmented information and lack of immersive cultural context.</p>
-      <p><strong>Needs:</strong> Rich cultural content, intelligent route planning, and interactive storytelling.</p>
+      <span class="tag">Smart routes</span>
+      <p><strong>Pain Points:</strong> Fragmented information and lack of immersive context.</p>
+      <p><strong>Needs:</strong> Rich storytelling, intelligent navigation, and interactive experiences.</p>
     </div>
 
     <div class="persona-card">
-      <h3>Wang Meiling · Senior Leisure Traveler</h3>
-      <p><strong>Age:</strong> 65 &nbsp;|&nbsp; <strong>Occupation:</strong> Retired Teacher</p>
-      <p><strong>Background:</strong> Enjoys relaxed cultural tourism and values clarity, accessibility, and comfort in digital tools.</p>
+      <h3>Wang Meiling · Senior Traveler</h3>
+      <p><strong>Age:</strong> 65 | <strong>Occupation:</strong> Retired Teacher</p>
       <p><strong>Goals:</strong></p>
       <span class="tag">Easy navigation</span>
       <span class="tag">Readable content</span>
-      <span class="tag">Comfortable travel experience</span>
-      <p><strong>Pain Points:</strong> Small text, complex interfaces, and confusing navigation.</p>
-      <p><strong>Needs:</strong> Elder-friendly mode, large fonts, simple navigation, and optional audio guidance.</p>
+      <span class="tag">Comfortable travel</span>
+      <p><strong>Pain Points:</strong> Small fonts and complex interfaces.</p>
+      <p><strong>Needs:</strong> Elder-friendly mode, clear layout, and simple interaction.</p>
     </div>
   </div>
 </section>
