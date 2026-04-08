@@ -17,20 +17,35 @@
 
     /* Hero Background */
     .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background:
-        linear-gradient(rgba(10,10,10,0.7), rgba(10,10,10,0.95)),
-        url('https://images.unsplash.com/photo-1549893075-7c1f2d7fdd4b?q=80&w=1920&auto=format&fit=crop');
-      background-size: cover;
-      background-position: center;
-      padding: 40px 20px;
-    }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
 
+  background:
+    linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.95)),
+    url('images/hero-bg.jpg');  /* 使用本地图片 */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(232,212,180,0.15), transparent 60%);
+  pointer-events: none;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+    
     .hero h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3.5rem;
