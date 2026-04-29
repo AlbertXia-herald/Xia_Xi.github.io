@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requirements | Maple Bridge Process Portfolio</title>
+  <meta
+    name="description"
+    content="User journey evidence, pain points, user needs, functional and playful requirements for the Maple Bridge process portfolio."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="requirements">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Maple Bridge Process Portfolio home">
+          <span class="brand-mark">MB</span>
+          <span class="brand-text">
+            <strong>Maple Bridge</strong>
+            <span>Process Portfolio</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="index.html" data-page="index">Overview</a>
+          <a href="research.html" data-page="research">Research</a>
+          <a href="requirements.html" data-page="requirements">Requirements</a>
+          <a href="ideation.html" data-page="ideation">Ideation</a>
+          <a href="implementation.html" data-page="implementation">Implementation</a>
+          <a href="evaluation.html" data-page="evaluation">Evaluation</a>
+          <a href="team.html" data-page="team">Team</a>
+          <a href="references.html" data-page="references">References</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container hero-content hero-content-simple">
+          <div class="hero-copy">
+            <p class="eyebrow">User Requirements</p>
+            <h1>This page shows how user requirements were derived from journey maps and fieldwork evidence rather than from speculative feature planning.</h1>
+            <p class="hero-lead">
+              The requirement logic here is built around visible user journeys, interview media, and
+              cautious synthesis. Where current evidence supports a need, the page names it
+              directly. Where stronger proof is still needed, the page keeps that uncertainty open
+              with explicit TODO markers.
+            </p>
+            <div class="hero-meta">
+              <span>Focus: Requirement derivation</span>
+              <span>Evidence: Journey maps + interviews</span>
+              <span>Status: Partially documented</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Fieldwork Evidence</p>
+            <h2>Interview images and video are presented as process evidence, not decorative media.</h2>
+            <p>
+              These materials document that user-facing fieldwork took place around the site. They
+              support the requirement page as evidence of observation and engagement, while detailed
+              interpretation still needs to remain careful and traceable.
+            </p>
+          </div>
+
+          <div class="fieldwork-grid">
+            <figure class="fieldwork-card fieldwork-card-feature">
+              <img src="images/interview1.jpg" alt="Interview fieldwork at Maple Bridge with a participant in traditional clothing">
+              <figcaption>Interview evidence 01: on-site participant exchange.</figcaption>
+            </figure>
+            <figure class="fieldwork-card">
+              <img src="images/interview2.jpg" alt="Interview fieldwork near the Maple Bridge site entrance">
+              <figcaption>Interview evidence 02: observing on-site explanation and orientation.</figcaption>
+            </figure>
+            <figure class="fieldwork-card">
+              <img src="images/interview3.jpg" alt="Interview fieldwork with an older participant at the cultural site">
+              <figcaption>Interview evidence 03: engagement with an older visitor.</figcaption>
+            </figure>
+            <figure class="fieldwork-card">
+              <img src="images/interview4.jpg" alt="Interview fieldwork around the garden environment at Maple Bridge">
+              <figcaption>Interview evidence 04: environment and participant context.</figcaption>
+            </figure>
+            <figure class="fieldwork-card">
+              <img src="images/interview5.jpg" alt="Interview fieldwork in a crowded area at Maple Bridge">
+              <figcaption>Interview evidence 05: crowd conditions and public interaction context.</figcaption>
+            </figure>
+          </div>
+
+          <article class="video-panel">
+            <div class="document-panel-head">
+              <div>
+                <p class="card-kicker">Interview Video</p>
+                <h3>On-site fieldwork clip</h3>
+              </div>
+              <a class="text-link" href="images/interview_video.mp4">Open video file</a>
+            </div>
+            <video controls preload="metadata" class="fieldwork-video">
+              <source src="images/interview_video.mp4" type="video/mp4">
+              Your browser does not support embedded video. You can open the file directly instead.
+            </video>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Requirement</p>
+            <h2>The requirements below are organized into must-haves, functional requirements, and non-functional requirements.</h2>
+          </div>
+          <div class="requirement-section-stack">
+            <article class="requirement-list-card">
+              <p class="card-kicker">3 Must-Haves</p>
+              <h3>Three playful and high-priority requirement directions.</h3>
+              <ul class="requirement-list">
+                <li>抽签</li>
+                <li>照片墙</li>
+                <li>可互动地图 + 景点讲解 + 小游戏</li>
+              </ul>
+              <p class="todo-note">
+                TODO: verify how each of these is prioritized in final implementation scope versus
+                broader experience direction.
+              </p>
+            </article>
+
+            <article class="requirement-list-card">
+              <p class="card-kicker">Functional Requirements</p>
+              <h3>The current evidence suggests these core functional directions.</h3>
+              <ul class="requirement-list">
+                <li>The system should support clear orientation and route understanding for visitors moving through Maple Bridge.</li>
+                <li>The system should provide accessible explanatory content that helps users connect places with cultural meaning.</li>
+                <li>The system should support visitors with different levels of familiarity, confidence, and reading comfort.</li>
+                <li>The current evidence suggests a need for guidance features that reduce confusion without overcomplicating the experience.</li>
+                <li>The system should support culturally relevant information delivery in a way that is easy to scan during or around the visit.</li>
+              </ul>
+              <p class="todo-note">
+                TODO: verify the wording and priority of each requirement against closer readings of
+                the two journey maps and any interview notes not yet placed on the site.
+              </p>
+            </article>
+
+            <article class="requirement-list-card">
+              <p class="card-kicker">Non-Functional Requirements</p>
+              <h3>The page also implies a set of quality and usability constraints.</h3>
+              <ul class="requirement-list">
+                <li>The experience should remain easy to scan and understand during real site visits.</li>
+                <li>The interaction structure should reduce cognitive burden rather than add complexity.</li>
+                <li>The presentation should remain inclusive for users with different ages and familiarity levels.</li>
+                <li>The system should keep cultural content legible without overwhelming the user with dense information.</li>
+                <li>Navigation and content grouping should remain predictable across the experience.</li>
+              </ul>
+              <p class="todo-note">
+                TODO: verify whether these should be split further into accessibility, readability,
+                and interaction-consistency categories.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">User Journey Map</p>
+            <h2>The journey maps remain primary evidence for how requirements were derived.</h2>
+            <p>
+              Two journey maps are placed directly on the page: one for residents and one for
+              tourists. They remain visible as evidence anchors rather than hidden references.
+            </p>
+          </div>
+          <div class="journey-grid">
+            <article class="document-panel">
+              <div class="document-panel-head">
+                <div>
+                  <p class="card-kicker">Journey Map Evidence</p>
+                  <h3>Resident version</h3>
+                </div>
+                <a class="text-link" href="assets/pdf/user%20journey%20map_resident%20version.pdf">Open PDF in new tab</a>
+              </div>
+              <p class="document-note">
+                This document is used as a source for resident-side requirement thinking. Detailed
+                stage-by-stage claims should be added only after direct verification from the map.
+              </p>
+              <div class="document-frame">
+                <object data="assets/pdf/user journey map_resident version.pdf" type="application/pdf">
+                  <p>
+                    PDF preview is not available in this browser.
+                    <a href="assets/pdf/user%20journey%20map_resident%20version.pdf">Open the resident journey map</a>.
+                  </p>
+                </object>
+              </div>
+            </article>
+
+            <article class="document-panel">
+              <div class="document-panel-head">
+                <div>
+                  <p class="card-kicker">Journey Map Evidence</p>
+                  <h3>Tourist version</h3>
+                </div>
+                <a class="text-link" href="assets/pdf/user%20journey%20map_tourist%20version.pdf">Open PDF in new tab</a>
+              </div>
+              <p class="document-note">
+                This document is used as a source for tourist-side requirements. The summary
+                language on this page stays high-level unless a finer-grained interpretation is
+                explicitly supported.
+              </p>
+              <div class="document-frame">
+                <object data="assets/pdf/user journey map_tourist version.pdf" type="application/pdf">
+                  <p>
+                    PDF preview is not available in this browser.
+                    <a href="assets/pdf/user%20journey%20map_tourist%20version.pdf">Open the tourist journey map</a>.
+                  </p>
+                </object>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div>
+          <p class="footer-title">Maple Bridge Process Portfolio</p>
+          <p class="footer-copy">
+            A static CPT208 companion site for documenting process, evidence, and reflection.
+          </p>
+        </div>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="research.html">Research</a>
+          <a href="implementation.html">Implementation</a>
+          <a href="references.html">References</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

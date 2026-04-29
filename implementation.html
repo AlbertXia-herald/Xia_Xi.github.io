@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Implementation | Maple Bridge Process Portfolio</title>
+  <meta
+    name="description"
+    content="System architecture, feature mapping, and implementation notes for the Maple Bridge process portfolio."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="implementation">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Maple Bridge Process Portfolio home">
+          <span class="brand-mark">MB</span>
+          <span class="brand-text">
+            <strong>Maple Bridge</strong>
+            <span>Process Portfolio</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="index.html" data-page="index">Overview</a>
+          <a href="research.html" data-page="research">Research</a>
+          <a href="requirements.html" data-page="requirements">Requirements</a>
+          <a href="ideation.html" data-page="ideation">Ideation</a>
+          <a href="implementation.html" data-page="implementation">Implementation</a>
+          <a href="evaluation.html" data-page="evaluation">Evaluation</a>
+          <a href="team.html" data-page="team">Team</a>
+          <a href="references.html" data-page="references">References</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container hero-content hero-content-simple">
+          <div class="hero-copy">
+            <p class="eyebrow">Project Build</p>
+            <h1>This page explains how the project was built without overstating technical complexity.</h1>
+            <p class="hero-lead">
+              The current implementation is documented as it actually exists: a static multi-page
+              site with shared styles, a small shared navigation script, embedded evidence assets,
+              and linked hi-fi outcome material. Where the architecture diagram suggests broader
+              system ideas than the current codebase demonstrates directly, that distinction is kept visible.
+            </p>
+            <div class="hero-meta">
+              <span>Focus: System build</span>
+              <span>Technology: Static web</span>
+              <span>Status: Partially documented</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">System Architecture</p>
+            <h2>The architecture diagram is the main evidence block for describing overall system and data handling structure.</h2>
+            <p>
+              The PDF below is included directly so the architecture can be read as source material.
+              The interpretation alongside it stays limited to what the artifact and the current repo
+              structure can reasonably support.
+            </p>
+          </div>
+
+          <div class="journey-grid">
+            <article class="document-panel">
+              <div class="document-panel-head">
+                <div>
+                  <p class="card-kicker">Architecture Evidence</p>
+                  <h3>System Architecture</h3>
+                </div>
+                <a class="text-link" href="assets/pdf/System%20Architecture.pdf">Open PDF in new tab</a>
+              </div>
+              <div class="document-frame">
+                <object data="assets/pdf/System Architecture.pdf" type="application/pdf">
+                  <p>
+                    PDF preview is not available in this browser.
+                    <a href="assets/pdf/System%20Architecture.pdf">Open the system architecture PDF</a>.
+                  </p>
+                </object>
+              </div>
+            </article>
+
+            <article class="editorial-block">
+              <div class="section-heading section-heading-left">
+                <p class="eyebrow">Architecture Reading</p>
+                <h2>The implementation is described here through a layered static architecture with clearly separated responsibilities.</h2>
+              </div>
+              <p>
+                The system adopts a frontend-only static multi-page architecture that organises the
+                application into clearly defined layers: User, Presentation, Logic, Data/State, and
+                External Services/Deployment. Two primary user groups, visitors and residents,
+                access the system through five main interfaces: Homepage, Interactive Map, Photo
+                Wall, Notice Board, and Smart Agent.
+              </p>
+              <p>
+                At the presentation level, user interactions such as tapping, browsing, submitting,
+                asking, and viewing are captured and translated into page events. These events are
+                then processed by the logic layer, which combines a shared controller, `script.js`,
+                with page-specific scripts including `interactive-map.js`, `photo-wall.js`,
+                `notice-board.js`, and `smart-agent.js`. This layered structure ensures that shared
+                interface behaviours are managed consistently while allowing each page to support
+                its own specialised interactions.
+              </p>
+              <p>
+                At the data level, the current prototype relies on embedded content datasets,
+                static assets, browser file previews, `localStorage` preferences, and
+                UI/interaction states, rather than a backend server or database. As a result, most
+                system behaviour is executed directly in the browser: scripts read embedded content,
+                update local interface states, retrieve selected external data, and render feedback
+                back to users in the form of cards, modals, previews, and dynamic text updates.
+              </p>
+              <p>
+                External integrations are used selectively to extend functionality, including
+                Open-Meteo APIs for weather information, AMap SDK for live map rendering and hotspot
+                markers, and Google Fonts for visual presentation. Overall, this architecture
+                provides a lightweight yet functional implementation model, enabling interactive
+                user experiences within a static deployment environment while maintaining a clear
+                separation between interface, logic, data, and service dependencies.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Feature-To-Requirement Mapping</p>
+            <h2>The mapping below distinguishes between what is already represented locally and what is currently linked as external outcome evidence.</h2>
+          </div>
+          <div class="comparison-table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Requirement theme</th>
+                  <th>Feature area</th>
+                  <th>Current implementation status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Clear orientation and structure</td>
+                  <td>Shared navigation, homepage hub, modular subpages</td>
+                  <td>Represented directly in the local portfolio build</td>
+                </tr>
+                <tr>
+                  <td>Evidence visibility</td>
+                  <td>Embedded PDFs, interview media, source-linked content blocks</td>
+                  <td>Represented directly in the local portfolio build</td>
+                </tr>
+                <tr>
+                  <td>Deeper cultural and interaction features</td>
+                  <td>Hi-fi project direction and experience outcome</td>
+                  <td>Currently linked as external hi-fi evidence rather than fully implemented in this local repo</td>
+                </tr>
+                <tr>
+                  <td>Playful and interpretive interactions</td>
+                  <td>Fortune drawing, photo wall, interactive map and guided exploration</td>
+                  <td>TODO: verify exact local implementation scope versus external hi-fi scope</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Personal Contribution Table</p>
+            <h2>A coursework-style contribution table is reserved here for later completion.</h2>
+          </div>
+          <div class="comparison-table-wrap">
+            <table class="comparison-table contribution-table">
+              <thead>
+                <tr>
+                  <th>Member</th>
+                  <th>Contribution area</th>
+                  <th>Implementation tasks</th>
+                  <th>Evidence / link</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>Pending completion</td>
+                </tr>
+                <tr>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>Pending completion</td>
+                </tr>
+                <tr>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>Pending completion</td>
+                </tr>
+                <tr>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>TODO</td>
+                  <td>Pending completion</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div>
+          <p class="footer-title">Maple Bridge Process Portfolio</p>
+          <p class="footer-copy">
+            A static CPT208 companion site for documenting process, evidence, and reflection.
+          </p>
+        </div>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="research.html">Research</a>
+          <a href="implementation.html">Implementation</a>
+          <a href="references.html">References</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

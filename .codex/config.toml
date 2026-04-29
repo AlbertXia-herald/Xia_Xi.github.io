@@ -1,0 +1,22 @@
+model = "gpt-5"
+reasoning_effort = "medium"
+
+[projects."/ABSOLUTE/PATH/TO/YOUR/PORTFOLIO-REPO"]
+trust_level = "trusted"
+
+[profiles.default]
+model = "gpt-5"
+reasoning_effort = "medium"
+
+[profiles.portfolio_build]
+model = "gpt-5"
+reasoning_effort = "high"
+
+[sandbox_workspace_write]
+network_access = false
+
+[tools]
+web_search = false
+
+[ui]
+show_diff_on_completion = true

@@ -1,253 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fengqiao Night Mooring | Team & Personas</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      color: #f5f5f5;
-      background: #0a0a0a;
-    }
-
-    /* Hero Background */
-    .hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 40px 20px;
-
-  background:
-    linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.95)),
-    url('images/hero-bg.jpg');  /* 使用本地图片 */
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  }
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 70% 30%, rgba(232,212,180,0.15), transparent 60%);
-  pointer-events: none;
-}
-
-.hero {
-  position: relative;
-  overflow: hidden;
-}
-    
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
-      color: #e8d4b4;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: #ddd;
-      max-width: 700px;
-    }
-
-    section {
-      padding: 70px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2.3rem;
-      color: #e8d4b4;
-      margin-bottom: 10px;
-      font-family: 'Playfair Display', serif;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      color: #bbb;
-      margin-bottom: 40px;
-    }
-
-    /* Team Cards */
-    .team-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-    }
-
-    .member-card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(232, 212, 180, 0.3);
-      border-radius: 16px;
-      padding: 25px;
-      text-align: center;
-      backdrop-filter: blur(10px);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .member-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 30px rgba(232, 212, 180, 0.2);
-    }
-
-    .member-card img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #e8d4b4;
-      margin-bottom: 15px;
-    }
-
-    .member-card h3 {
-      margin: 10px 0 5px;
-    }
-
-    .member-card .id {
-      font-size: 0.9rem;
-      color: #d4b888;
-      margin-bottom: 10px;
-    }
-
-    .member-card p {
-      font-size: 0.95rem;
-      color: #ddd;
-    }
-
-    /* Persona Cards */
-    .persona-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-    }
-
-    .persona-card {
-      background: linear-gradient(180deg, rgba(232,212,180,0.08), rgba(255,255,255,0.02));
-      border: 1px solid rgba(232, 212, 180, 0.4);
-      border-radius: 16px;
-      padding: 25px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .persona-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(232, 212, 180, 0.2);
-    }
-
-    .persona-card h3 {
-      color: #e8d4b4;
-      margin-top: 0;
-      font-family: 'Playfair Display', serif;
-    }
-
-    .tag {
-      display: inline-block;
-      background: rgba(232, 212, 180, 0.15);
-      color: #e8d4b4;
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      margin: 4px 6px 4px 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      border-top: 1px solid rgba(232, 212, 180, 0.2);
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maple Bridge Process Portfolio</title>
+  <meta
+    name="description"
+    content="A documentation-focused companion site for the Maple Bridge CPT208 project, structured around research, requirements, ideation, implementation, evaluation, and references."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body>
+<body data-page="index">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Maple Bridge Process Portfolio home">
+          <span class="brand-mark">MB</span>
+          <span class="brand-text">
+            <strong>Maple Bridge</strong>
+            <span>Process Portfolio</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="index.html" data-page="index">Overview</a>
+          <a href="research.html" data-page="research">Research</a>
+          <a href="requirements.html" data-page="requirements">Requirements</a>
+          <a href="ideation.html" data-page="ideation">Ideation</a>
+          <a href="implementation.html" data-page="implementation">Implementation</a>
+          <a href="evaluation.html" data-page="evaluation">Evaluation</a>
+          <a href="team.html" data-page="team">Team</a>
+          <a href="references.html" data-page="references">References</a>
+        </nav>
+      </div>
+    </header>
 
-<!-- Hero Section -->
-<div class="hero">
-  <h1>Fengqiao Night Mooring</h1>
-  <p>A human-centered digital experience inspired by the poetic beauty of Maple Bridge in Suzhou.</p>
-</div>
+    <main>
+      <section class="page-hero page-hero-home">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">CPT208 Process Portfolio Hub</p>
+            <h1>Maple Bridge, reorganized as a calm and evidence-oriented coursework homepage.</h1>
+            <p class="hero-lead">
+              This homepage introduces the Maple Bridge process portfolio companion site through
+              project framing, documentation status, process stages, and direct routes into the
+              pages where fuller evidence and reflection belong.
+            </p>
+            <div class="hero-meta" aria-label="Project metadata">
+              <span>Project: Maple Bridge</span>
+              <span>Module: CPT208</span>
+              <span>Status: Portfolio hub implemented</span>
+            </div>
+            <div class="hero-actions" aria-label="Hero actions">
+              <a class="button-link button-link-primary" href="research.html">Enter the process record</a>
+              <a class="button-link button-link-secondary" href="requirements.html">Go to requirements</a>
+            </div>
+          </div>
+          <aside class="hero-panel callout-card">
+            <p class="callout-label">Reading Guide</p>
+            <h2>This page orients the reader without overstating what has already been evidenced.</h2>
+            <p>
+              Confirmed framing is shown directly. Unconfirmed details, destinations, and missing
+              artifacts remain visible as TODO items so the portfolio stays honest and usable.
+            </p>
+            <div class="hero-panel-list">
+              <span>Use the timeline to understand process stages.</span>
+              <span>Use the entry cards to move into dedicated documentation pages.</span>
+              <span>Use the shared navigation to move between focused documentation pages.</span>
+            </div>
+          </aside>
+        </div>
+      </section>
 
-<!-- Team Section -->
-<section>
-  <h2 class="section-title">Our Team</h2>
-  <p class="section-subtitle">Blending technology, creativity, and human-centered design.</p>
+      <section class="section">
+        <div class="container two-column hub-overview">
+          <article class="editorial-block">
+            <div class="section-heading section-heading-left">
+              <p class="eyebrow">Project Overview</p>
+              <h2>A homepage designed for reading, verification, and coursework review.</h2>
+            </div>
+            <p>
+              Maple Bridge is presented here as a process portfolio companion site rather than a
+              promotional landing page. The homepage acts as a hub that introduces the project,
+              explains the portfolio structure, and directs readers toward research, requirements,
+              ideation, implementation, evaluation, and supporting references.
+            </p>
+            <p>
+              TODO: insert a concise confirmed overview of the Maple Bridge project once the final
+              wording has been checked against coursework materials or project documentation.
+            </p>
+          </article>
+          <aside class="checklist-card">
+            <p class="card-kicker">Homepage Purpose</p>
+            <ul class="checklist">
+              <li>Orient the reader before detailed documentation pages</li>
+              <li>Show current documentation status clearly</li>
+              <li>Present process stages without collapsing them into one narrative block</li>
+              <li>Keep missing information visible through explicit TODO markers</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
 
-  <div class="team-container">
-    <div class="member-card">
-      <img src="images/shuobai.jpg" alt="Shuobai Chen">
-      <h3>Shuobai Chen</h3>
-      <div class="id">Student ID: 2362870</div>
-      <p>Skilled in vibe coding and storytelling, bringing creativity and emotional engagement into the project.</p>
-    </div>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Process Timeline</p>
+            <h2>A clear path through the stages of the project record.</h2>
+            <p>
+              The timeline is structured by stage rather than by claim of completion. Dates and
+              milestone notes should be added only when they are confirmed.
+            </p>
+          </div>
+          <div class="timeline-grid">
+            <article class="timeline-card">
+              <span class="timeline-step">01</span>
+              <h3>Research</h3>
+              <p>Audience framing, context, and early inputs.</p>
+              <p class="timeline-note">TODO: add confirmed research evidence or milestone note.</p>
+            </article>
+            <article class="timeline-card">
+              <span class="timeline-step">02</span>
+              <h3>Requirements</h3>
+              <p>Project goals, needs, constraints, and scope logic.</p>
+              <p class="timeline-note">TODO: add confirmed requirement rationale or date.</p>
+            </article>
+            <article class="timeline-card">
+              <span class="timeline-step">03</span>
+              <h3>Ideation</h3>
+              <p>Design direction, alternatives, and structural planning.</p>
+              <p class="timeline-note">TODO: add confirmed iteration evidence.</p>
+            </article>
+            <article class="timeline-card">
+              <span class="timeline-step">04</span>
+              <h3>Implementation</h3>
+              <p>Build system, page structure, and technical decisions.</p>
+              <p class="timeline-note">Shared shell completed in this pass.</p>
+            </article>
+            <article class="timeline-card">
+              <span class="timeline-step">05</span>
+              <h3>Evaluation</h3>
+              <p>Review, testing structure, reflection, and next steps.</p>
+              <p class="timeline-note">TODO: add confirmed validation notes.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <div class="member-card">
-      <img src="images/antian.jpg" alt="Antian Sun">
-      <h3>Antian Sun</h3>
-      <div class="id">Student ID: 2362202</div>
-      <p>Focused on web development and human-centered design, creating intuitive and user-friendly experiences.</p>
-    </div>
+    </main>
 
-    <div class="member-card">
-      <img src="images/zhenxi.jpg" alt="Zhenxi Chen">
-      <h3>Zhenxi Chen</h3>
-      <div class="id">Student ID: 2363276</div>
-      <p>Passionate about shaping digital landscapes with data and code, capturing the beauty of Maple Bridge.</p>
-    </div>
-
-    <div class="member-card">
-      <img src="images/jiahao.jpg" alt="Jiahao Qi">
-      <h3>Jiahao Qi</h3>
-      <div class="id">Student ID: 2362068</div>
-      <p>Proficient in Python, Java, C++, and Machine Learning, with strong interest in AI and Domain Adaptation.</p>
-    </div>
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div>
+          <p class="footer-title">Maple Bridge Process Portfolio</p>
+          <p class="footer-copy">
+            A static CPT208 companion site for documenting process, evidence, and reflection.
+          </p>
+        </div>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="research.html">Research</a>
+          <a href="implementation.html">Implementation</a>
+          <a href="references.html">References</a>
+        </div>
+      </div>
+    </footer>
   </div>
-</section>
 
-<!-- Personas Section -->
-<section>
-  <h2 class="section-title">User Personas</h2>
-  <p class="section-subtitle">Designed following the 10-80-10 rule for inclusive user experience.</p>
-
-  <div class="persona-container">
-    <div class="persona-card">
-      <h3>Li Wen · Cultural Explorer</h3>
-      <p><strong>Age:</strong> 28 | <strong>Occupation:</strong> Cultural Researcher</p>
-      <p><strong>Goals:</strong></p>
-      <span class="tag">Cultural depth</span>
-      <span class="tag">Historical storytelling</span>
-      <span class="tag">Smart routes</span>
-      <p><strong>Pain Points:</strong> Fragmented information and lack of immersive context.</p>
-      <p><strong>Needs:</strong> Rich storytelling, intelligent navigation, and interactive experiences.</p>
-    </div>
-
-    <div class="persona-card">
-      <h3>Wang Meiling · Senior Traveler</h3>
-      <p><strong>Age:</strong> 65 | <strong>Occupation:</strong> Retired Teacher</p>
-      <p><strong>Goals:</strong></p>
-      <span class="tag">Easy navigation</span>
-      <span class="tag">Readable content</span>
-      <span class="tag">Comfortable travel</span>
-      <p><strong>Pain Points:</strong> Small fonts and complex interfaces.</p>
-      <p><strong>Needs:</strong> Elder-friendly mode, clear layout, and simple interaction.</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  © 2026 Fengqiao Night Mooring Project · Human-Centric Computing
-</footer>
-
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
